@@ -60,7 +60,7 @@ function render(index) {
 
 window.addEventListener("scroll", (e) => {
     const scrollY = window.scrollY;
-    const triggerPoint = pageHeight - window.innerHeight - 250;
+    const triggerPoint = pageHeight - window.innerHeight - 200;
 
     if(scrollY >= triggerPoint) {
         renderNext();
