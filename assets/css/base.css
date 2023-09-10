@@ -1,0 +1,25 @@
+:root {
+    --backgroud-color: #141517;
+    --text-color: #fcfcfc;
+    --primary-color: #0085ff;
+    --primary-color2: #27282a;
+    --primary-color3: #213555;
+    --image-size: 200px;
+    --gap-size: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'r0c0i Linotte';
+}
+
+#root {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--backgroud-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+}

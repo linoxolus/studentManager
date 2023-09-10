@@ -1,0 +1,69 @@
+.students-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--gap-size);
+    padding: calc(var(--gap-size) * 2);
+}
+
+.student-item {
+    border-radius: 8px;
+    overflow: hidden;
+    width: var(--image-size);
+    position: relative;
+    box-shadow: 0 0 6px #000;
+}
+
+.student-image {
+    width: var(--image-size);
+    height: var(--image-size);
+}
+
+.image-flag {
+    position: absolute;
+    z-index: 1;
+    background: var(--primary-color3);
+    top: 0;
+    right: 0;
+    padding: 1px 10px;
+    border-bottom-left-radius: 8px;
+}
+
+.student-img {
+    width: 100%;
+    height: 100%;
+}
+
+.student-info {
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--primary-color2);
+    padding: 12px;
+}
+
+.student-info-item {
+    padding: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+    .students-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .students-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .students-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .students-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
