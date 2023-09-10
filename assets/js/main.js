@@ -23,7 +23,6 @@ function renderNext() {
             render(currentIndex);
         }
     }
-    currentIndex++;
 }
 
 function render(index) {
@@ -58,6 +57,7 @@ function render(index) {
     studentsList.innerHTML += html;
     html = 0;
     pageHeight = document.documentElement.scrollHeight;
+    currentIndex++;
 }
 
 function scrollRender(e) {
