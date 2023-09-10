@@ -58,11 +58,14 @@ function render(index) {
     pageHeight = document.documentElement.scrollHeight;
 }
 
-window.addEventListener("scroll", (e) => {
+function scrollRender(e) {
+    var pageHeight = document.documentElement.scrollHeight;
     const scrollY = window.scrollY;
     const triggerPoint = pageHeight - window.innerHeight - 200;
 
-    if(scrollY >= triggerPoint) {
+    if (scrollY >= triggerPoint) {
         renderNext();
     }
-});
+}
+
+window.addEventListener("scroll", scrollRender);
