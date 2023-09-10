@@ -5,12 +5,17 @@
     padding: calc(var(--gap-size) * 2);
 }
 
+.student {
+    list-style: none;
+}
+
 .student-item {
     border-radius: 8px;
     overflow: hidden;
     width: var(--image-size);
     position: relative;
     box-shadow: 0 0 6px #000;
+    max-height: fit-content;
 }
 
 .student-image {
