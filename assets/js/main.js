@@ -18,9 +18,12 @@ fetch("assets/db/db.json")
     });
 
 function renderNext() {
-    for (i = 0; i <= 10; i++) {
-        render(currentIndex);
+    if(currentIndex < students.length) {
+        for (i = 0; i <= 10; i++) {
+            render(currentIndex);
+        }
     }
+    currentIndex++;
 }
 
 function render(index) {
@@ -54,7 +57,6 @@ function render(index) {
     </li>`;
     studentsList.innerHTML += html;
     html = 0;
-    currentIndex++;
     pageHeight = document.documentElement.scrollHeight;
 }
 
