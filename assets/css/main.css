@@ -49,6 +49,10 @@
     padding: 4px;
 }
 
+.student-name {
+    height: 3em;
+}
+
 @media screen and (max-width: 1200px) {
     .students-list {
         grid-template-columns: repeat(4, 1fr);
